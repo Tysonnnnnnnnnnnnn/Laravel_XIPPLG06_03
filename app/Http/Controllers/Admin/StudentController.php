@@ -74,7 +74,7 @@ class StudentController extends Controller
         ]);
 
         $student->update($validated);
-        return redirect()->route('admin.students.index')->with('success', 'Data siswa berhasil diperbarui');
+        return redirect()->route('students.index')->with('success', 'Data siswa berhasil diperbarui');
     }
 
 
